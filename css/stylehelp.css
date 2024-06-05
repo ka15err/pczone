@@ -1,0 +1,308 @@
+body {
+	font-family: "Onest",	sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	color: black;
+	margin: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.container	{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #f6eb16;
+	height: 100px;
+}
+
+.header__inner {
+	display: flex;
+	float: left;
+	align-items: center;
+	height: 100px;
+}
+
+.logo {
+	font-size: 35px;
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+}
+
+.nav {
+	font-size: 15px;
+}
+
+.nav__link {
+	display: inline-block;
+	vertical-align: top;
+	color: black;
+	margin: 0 25px;
+	text-decoration: none;
+	position: relative;
+	left: 20px;
+}
+
+.nav__link:after {
+	content: "";
+	display: block;
+	opacity: 0;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	transition: opacity 0.1s linear;
+}
+
+.nav__link:hover:after {
+	opacity: 1;
+}
+
+form {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  left: 20px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  color: black;
+  font-size: 15px;
+}
+.button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+.user {
+	position: relative;
+	left: 80px;
+}
+.user2 {
+	text-decoration: none;
+	color: black;
+}
+.shop {
+	text-decoration: none;
+	color: black;
+}
+
+.categories{
+	display: inline-block;
+	vertical-align: top;
+	color: black;
+	margin: 0 25px;
+	text-decoration: none;
+	position: relative;
+	font-family: ;
+}
+.categories:after {
+	content: "";
+	display: block;
+	opacity: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #f6eb16;
+	position: absolute;
+	top: 39px;
+	left: 0;
+	z-index: 1;
+	transition: opacity 0.1s linear;
+}
+.categories:hover:after {
+	opacity: 3;
+}
+
+.intro {
+ 	
+ 	border-bottom: #d8d8d8 solid 1px; 
+}
+.intro_inner {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 60px;	
+}
+.home_inner {
+	display: inline-flex;
+	align-items: center;
+	
+}
+.jj {
+	color: #4f4f4f ;
+}
+.jl {
+	text-decoration: none;
+	color: black;
+}
+
+
+.pc_name {
+	justify-content: center;
+	display: flex;
+	font-size:  clamp(1.675rem, 2vw + 1rem, 2.5rem);
+}
+.pc_name2 {
+	justify-content: center;
+	display: flex;
+  font-size: 18px;
+  text-align: center;
+}
+.hp__{
+	display: grid;
+	grid-template-columns: 350px 350px 350px;
+	column-gap: 100px;
+	margin-top: 30px;
+	justify-content: center;
+
+}
+.hp_in{
+	width: 350px;
+	height: 600px;
+	border: #d8d8d8 solid 2px;
+	border-radius: 10px;
+	padding-top: 15px;
+
+}
+
+.hp1{
+	width: 330px;
+	
+
+}
+.hp1_in {
+	width: 350px;
+	height: 360px;
+	align-items: center;
+	display: flex;
+}
+.hp_name{
+	justify-content: center;
+	text-align: center;
+	display: flex;
+  font-size: 18px;
+  padding-inline: 15px;
+}
+
+.card_garant {
+	justify-content: center;
+	justify-items: center;
+	display: flex;
+	width:350px;
+	
+}
+.garant_in {
+	display: flex;
+	max-width: 1400px;
+	width: 100%;
+	grid-template-columns: repeat(auto-fill, 200px);
+	justify-content:center;
+	justify-items: center;
+	
+	height: 150px;	
+	align-items: center;
+	border-radius: 7px;
+
+}
+.garant {
+	margin-top: 20px;
+	border-top: solid #eaeaea 1px;
+	border-bottom: solid #eaeaea 1px;
+}
+.foot{
+	
+	width: 330px;
+	height: 300px;
+	max-width: 1400px;
+	margin: 20px;
+}
+.foot3 {
+	background-color: #e4e9f1;
+
+	border-radius: 30px;
+.foot2 {
+	width: 600px;
+	align-items: center;
+
+}
+
+}
+.footer_in {
+	 display: grid;
+  grid-template-columns:600px 300px 300px;
+  
+  max-width: 1400px; 
+  justify-content: space-between;
+  justify-items: center; /* Размещаем карточку по центру */
+  column-gap: 50px; /* Отступ между колонками */
+  row-gap: 40px; /* Отступ между рядами */
+ 
+}
+.footer {
+	background-color: #f1f2f8;
+}
+}
+.nom2 {
+	font-size: 1rem;
+	color: #555555;
+
+}
+.p1 {
+	color: #555555;
+
+}
+.p2 {
+	color: #9698a1;
+}
+.nom {
+	font-size: 1.25rem;
+	font-weight: bold;
+	
+}
+.fot {
+	margin: 30px;
+}
+h4 {
+	font-size: 1.5rem;
+}
+.p5 {
+	color: #555555;
+	margin: 20px;
+	position: relative;
+	top: 50px;
+}
